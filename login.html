@@ -75,6 +75,33 @@ a {
 	border-color: #FFFFFF;
 }
 
+		
+		
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
 form {
 	background-color: #FFFFFF;
 	display: flex;
@@ -290,13 +317,12 @@ footer a {
 				<h1>Welcome Back!</h1>
 				<p>To keep connected with us please login with your personal info</p>
 				<button class="ghost" id="signIn" class="button">Sign In</button>
-					<a  class="ghost" class="button" id="signIn">Sign In</a>
+					<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Hello, Friend!</h1>
 				<p>Enter your username and password to login-in.</p>
-				
-				<a  class="ghost" class="button" id="signUp">Sign Up</a>
+				<button class="ghost" id="signUp">Sign Up</button>
 			</div>
 		</div>
 	</div>
