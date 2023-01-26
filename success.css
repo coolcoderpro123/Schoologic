@@ -17,7 +17,9 @@ body{
 	color:#fff;
 	background-color: #3F4C56;
 }
-
+.grades{
+color: white;
+}
 a{
 	text-transform: uppercase;
 	color:#fff;
