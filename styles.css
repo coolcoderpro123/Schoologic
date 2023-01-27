@@ -27,7 +27,9 @@
 
 /*Large Desktop*/
 /*General CSS*/
-
+.form w3-margin-top{
+align: center;
+}
 html {
   scroll-behavior: smooth;
 }
