@@ -1,341 +1,97 @@
-/*
-[0]GENERAL
-[1]MENU
-[2]MAIN CONTENT
-[3]MEDIA QUERIES
-*/
-
-/*[0]GENERAL*/
-* {
-  color:#fff;
-  font-size:12px;
-	transition: 0.5s ease;
-	box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
-body{
-	font-size: 14px;
-	color:#fff;
-	background-color: #3F4C56;
+.logo {
+	text-align: center;
 }
-
-a{
-	text-transform: uppercase;
-	color:#fff;
-}
-
-a:hover{
-	color:#fff;
-	text-decoration: none;
-	text-shadow: 1px 1px 15px #fff;
-}
-
-/*[1]MENU*/
-#menu{
-	color:#fff;
-	transition: 0.5s ease;
-	box-sizing: border-box;
-	background-color: #1A6E88;
-	padding-top:5%;
-	padding: 1%;
-	text-align: left;
-	position: fixed;
-	right: -15%;
-	top: 0;
-	height: 100%;
-	width: 20%;
-}
-
-#menu i{
-	font-size: 25px;
-}
-
-.fas{
-	padding: 5%;
+.logo a {
+	font-family: 'PT Sans', sans-serif;
+	padding: 20px 30px;
 	display: block;
+	font-weight: 16px;
 }
-#menu span{
-	color:transparent;
-	padding: 5%;
-	padding-left: 20%;
-	font-size: 20px;
+#sidebar {
+    z-index: 2001;
+    position: fixed;
+    width: 220px;
+		background-color: #2F2E33;
+		border-color: #2f4050;
+		-webkit-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		transition: all 0.4s;
+	height: 100%;
 }
-.fa-bars{
-	padding-top: 15%;
+.sidebar-nav .menu>li>a {
+	color: #9EA6AF;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	padding: 20px 10px 20px 40px;
 }
-.menuExpand{
-	position: fixed;
-	top:0;
-	right:0!important;
+.sidebar-nav li:hover a {
+	background: #2A292E;
+	color: #fff;
 }
-.whiteText{
-	color:#fff !important;
+.sidebar-nav a i {
+	width: 30px;
+	text-align: center;
+	padding-right: 10px;
 }
-
-
-/*[2]MAIN CONTENT*/
-#topLeft,
-#topRight,
-#bottomLeft,
-#bottomRight{
-	box-shadow: -5px 10px 15px #2A3D4E;
-	margin: 0;
-	width: 35%;
-	background-color: #1A6E88;
-	padding: 3%;
+#content {
+    background: none repeat scroll 0 0 #eeeeee;
+    margin: 0 0 0 220px;
+    position: relative;
+    min-height: 100%;
+    width: auto;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;	
 }
-
-
-
-#topLeft{
-	max-height: 300px;
-	position: fixed;
-	top: 5%;
-	left:10%;
+#content-header {
+	background: #fff;
+	padding: 10px;
 }
-#topRight{
-	max-height:300px;
-	position: fixed;
-	top:5%;
-	left: 50%;
+.mini-nav {
+    font-size: 24px;
+    padding: 7px 10px;
 }
-
-.progress{
-	height: 40px;
+.user-header .user-name {
+	padding: 0 10px;
 }
-
-#bottomLeft{
-	position: fixed;
-	top: 350px;
-	left:10%;
-	max-height:200px;
-}
-
-#bottomRight{
-	position: fixed;
-	top:270px;
-	padding: 1%;
-	left: 50%;
-}
-
-
-#studentProgress{
-	padding: 2%;
-}
-#timeDiv{
-	text-align: right;
-}
-.btn{
-	color:#fff;
-	margin-top: 3%;
-	background-color: #1A6E88;
+.user-header .user-img img {
+	margin-top: 4px;
 	border-radius: 5px;
-	border:2px solid #00BCD4; 
+	max-width: 45px;
+	max-height: 45px;
 }
-.btn:hover{
-	background-color:#00BCD4;
+.banner.blue {
+	background: #04a1dc;
+	background: -moz-linear-gradient(left,  #04a1dc 1%, #0cb2ca 100%);
+	background: -webkit-linear-gradient(left,  #04a1dc 1%,#0cb2ca 100%);
+	background: linear-gradient(to right,  #04a1dc 1%,#0cb2ca 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04a1dc', endColorstr='#0cb2ca',GradientType=1 );
+background: #0f4375;
+background: -moz-linear-gradient(left,  #0f4375 0%, #2989d8 49%, #0f4375 100%);
+background: -webkit-linear-gradient(left,  #0f4375 0%,#2989d8 49%,#0f4375 100%);
+background: linear-gradient(to right,  #0f4375 0%,#2989d8 49%,#0f4375 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4375', endColorstr='#0f4375',GradientType=1 );
+	
+	padding: 40px;
+	color: #fff;
 }
-
-/*[3]MEDIA QUERIES*/
-@media only screen and (max-width: 1250px){
-	#bottomRight{
-		top:45%;
-	}
+.banner h4 {
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
 }
-@media only screen and (max-width: 1150px){
-	#menu{
-		right:-13%;
-	}
+.banner h5 {
+	font-weight: 300;
+	font-size: 16px;
+		font-family: 'Roboto', sans-serif;
 }
-@media only screen and (max-width: 890px){
-	#bottomRight{
-		padding: 1%;
-		top:40%;
-	}
-		h4{
-		font-size: 18px;
-	}
-	h5{
-		font-size: 16px;
-	}
-	h6{
-		font-size: 14px;}
-}
-
-@media only screen and (max-width: 780px){
-	#bottomRight{
-		top:38%;
-		padding: 3%;
-	}
-}
-@media only screen and (max-width: 750px){
-	#menu span {
-		font-size: 18px;
-	}
-}
-@media only screen and (max-width: 700px){
-	#menu{
-		right:-12%;
-	}
-	#menu span{
-		font-size: 16px;
-	}
-}
-@media only screen and (max-width: 680px){
-	#topRight,
-	#bottomRight{
-		width: 300px;
-	}
-	#menu span{
-		font-size: 16px;
-	}
-	.bottomLeft{
-		top:320px;
-	}
-}
-@media only screen and (max-width: 650px){
-	#menu span{
-		font-size: 14px;
-	}
-}
-@media only screen and (max-width: 625px){
-	#menu span{
-		font-size: 14px;
-	}
-	h4{
-		font-size: 20px;
-	}
-	h5{
-		font-size: 18px;
-	}
-	h6{
-		font-size: 16px;
-	}
-	#bottomRight{
-		top:40%;
-	}
-
-	#bottomLeft{
-		top:300px;
-	}
-}
-@media only screen and (max-width: 580px){
-	#menu span{
-		font-size: 12px;
-	}
-}
-/*major styling change to fix 550 and smaller*/
-@media only screen and (max-width: 550px){
-	#topLeft,
-	#bottomLeft{
-	left:2%;
-	}
-	#topRight,
-	#bottomRight{
-		left:40%;
-		width:250px;
-	}
-	#bottomRight{
-		top:30%;
-	}
-	#topRight{
-		text-align: center;
-	}
-	.progress{
-		margin:0 auto;
-		height: 20px;
-		width:50%;
-	}
-	.btn{
-		border:none;
-		height:20px;
-	}
-	.btn:hover{
-		background-color:initial;
-	}
-}
-@media only screen and (max-width: 530px){
-	#menu{
-		right:-15%;
-		width:25%;
-	}
-}
-/*major change in styling for mobile devices*/
-@media only screen and (max-width: 450px){
-	#studentImage{
-		display: none;
-	}
-	#topLeft,
-	#topRight,
-	#bottomLeft,
-	#bottomRight{
-		display: block;
-		width:350px;
-		position: fixed;
-		left:5%;
-		margin:0 auto;
-	}
-	/*student details*/
-	#topLeft{
-		text-align: center;
-		top:3%;
-		padding:2%;
-		height:70px;
-	}
-	/*menu/selector*/
-	#bottomLeft{
-		text-align: center;
-		top:245px;
-		height: 50px;
-	}
-	/*progress and dashboard*/
-	#topRight{
-		padding-bottom: 0;
-		top:85px;
-		height:150px;
-	}
-	/*subject details*/
-	#bottomRight{
-		margin: 0 auto;
-		text-align: left;
-		padding: 5px;
-		padding-left: 10px;
-		height:230px;
-		top:305px;
-	}
-	#menu{
-		background-color: #3F4C56;
-		height:130px;
-	}
-	h4{
-		font-size: 14px;
-	}
-	h5{
-		font-size: 12px;
-	}
-	h6{
-		font-size: 12px;
-		font-weight: normal;
-	}
-	.btn{
-		border:none;
-		font-size: 12px;
-		height: 16px;
-	}
-	.progress{
-		height: 20px;
-	}
-	#menu{
-		width:25%;
-		right:-11%;
-	}
-	#menu span{
-		color:transparent;
-	}
-}
-@media only screen and (max-width: 415px){
-	#menu{
-		right:-13%;
-		width:30%;
-
-	}
+.content-inner {
+	padding: 15px 0;
 }
