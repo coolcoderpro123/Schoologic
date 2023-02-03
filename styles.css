@@ -194,7 +194,7 @@ background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, F
   /* display: flex; */
   min-height: 300px;
   height: 800px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8d4ZxFrRNqKeuo8yY-q0AQzeB70sJedgQJ4UGJ2N92R86_-ZObRiM9I6GDdj2v6jTDc:https://cdn.pixabay.com/photo/2017/01/31/20/02/animal-2026876__480.png&usqp=CAU");
+  background-image: url("eaglebg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
