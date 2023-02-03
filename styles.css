@@ -33,7 +33,9 @@ align: center;
 html {
   scroll-behavior: smooth;
 }
-
+.navigation w3-highway-blue w3-container{
+  
+}
 body {
   font-family: "Quicksand", sans-serif;
 }
