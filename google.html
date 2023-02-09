@@ -61,8 +61,7 @@ function signInCallback(authResult) {
     // There was an error.
   }
 }
-      <script>
-  var GoogleAuth;
+      var GoogleAuth;
   var SCOPE = 'https://www.googleapis.com/auth/drive.metadata.readonly';
   function handleClientLoad() {
     // Load the API's client and auth2 modules.
@@ -149,7 +148,10 @@ function signInCallback(authResult) {
 <script async defer src="https://apis.google.com/js/api.js"
         onload="this.onload=function(){};handleClientLoad()"
         onreadystatechange="if (this.readyState === 'complete') this.onload()">
-</script>
-</script>
+
+      </script>
+
+
+
 </body>
 </html>
